@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dem.Window;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,11 +19,25 @@ namespace Dem
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow 
     {
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void button_Client_Click(object sender, RoutedEventArgs e)
+        {
+            ClientWindow clientWindow = new ClientWindow();
+            clientWindow.Show();
+            this.Close();
+        }
+
+        private void button_Realtor_Click(object sender, RoutedEventArgs e)
+        {
+            RealtorWindow realtorWindow = new RealtorWindow();
+            realtorWindow.Show();
+            this.Close();
         }
     }
 }

@@ -6,5 +6,8 @@
         xmlns:local="clr-namespace:Dem"
         mc:Ignorable="d"
         Title="Главное окно" Height="437.338" Width="462.013">
-    <Grid/>
+    <Grid>
+        <Button x:Name="button" Content="Клиенты" VerticalAlignment="Top" Margin="157,60,152,0" Height="47" Click="button_Client_Click"/>
+        <Button x:Name="button_Copy" Content="Риэлтор" Margin="157,157,152,202" IsDefault="True" Click="button_Realtor_Click"/>
+    </Grid>
 </Window>

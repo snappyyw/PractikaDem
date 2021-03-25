@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Vitalik\Desktop\Дем\PractikaDem\Dem\Dem\obj\Debug\
+C:\Users\Vitalik\Desktop\PractikaDem\Dem\Dem\obj\Debug\
 Dem
 none
 false
 DEBUG;TRACE
-C:\Users\Vitalik\Desktop\Дем\PractikaDem\Dem\Dem\App.xaml
-11151548125
+C:\Users\Vitalik\Desktop\PractikaDem\Dem\Dem\App.xaml
+5459165718
 2482335943
-11-1421739709
-18-1087593119
-MainWindow.xaml;
+15-1818347761
+1889903924
+Window\ClientWindow.xaml;Window\EditClientWindow.xaml;Window\EditRealtorWindow.xaml;Window\MainWindow.xaml;Window\RealtorWindow.xaml;
 
-False
+True
 
