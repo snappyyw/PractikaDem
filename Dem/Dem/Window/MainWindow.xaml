@@ -9,5 +9,6 @@
     <Grid>
         <Button x:Name="button" Content="Клиенты" VerticalAlignment="Top" Margin="157,60,152,0" Height="47" Click="button_Client_Click"/>
         <Button x:Name="button_Copy" Content="Риэлтор" Margin="157,157,152,202" IsDefault="True" Click="button_Realtor_Click"/>
+        <Button x:Name="button_Copy1" Content="Объекты недвижимости" Margin="157,0,152,116" IsDefault="True" Click="button_RealProperties_Click" Height="47" VerticalAlignment="Bottom"/>
     </Grid>
 </Window>

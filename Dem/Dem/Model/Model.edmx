@@ -16,6 +16,23 @@
           <Property Name="Phone" Type="nvarchar" MaxLength="50" />
           <Property Name="Email" Type="nvarchar" MaxLength="50" />
         </EntityType>
+        <EntityType Name="RealProperties">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NumberOfFloors" Type="int" />
+          <Property Name="NumberOfRooms" Type="int" />
+          <Property Name="Square" Type="nvarchar" MaxLength="50" />
+          <Property Name="Сity" Type="nvarchar" MaxLength="50" />
+          <Property Name="Longitude" Type="int" />
+          <Property Name="Latitude" Type="int" />
+          <Property Name="Street" Type="nvarchar" MaxLength="50" />
+          <Property Name="ApartmentNumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="HouseNumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="Floor" Type="int" />
+          <Property Name="Type" Type="nvarchar" MaxLength="50" />
+        </EntityType>
         <EntityType Name="Realtor">
           <Key>
             <PropertyRef Name="id" />
@@ -28,6 +45,7 @@
         </EntityType>
         <EntityContainer Name="Хранилище DemModelContainer">
           <EntitySet Name="Client" EntityType="Self.Client" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RealProperties" EntityType="Self.RealProperties" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Realtor" EntityType="Self.Realtor" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema>
@@ -46,6 +64,23 @@
           <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
+        <EntityType Name="RealProperties">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NumberOfFloors" Type="Int32" />
+          <Property Name="NumberOfRooms" Type="Int32" />
+          <Property Name="Square" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Сity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Longitude" Type="Int32" />
+          <Property Name="Latitude" Type="Int32" />
+          <Property Name="Street" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ApartmentNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="HouseNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Floor" Type="Int32" />
+          <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
         <EntityType Name="Realtor">
           <Key>
             <PropertyRef Name="id" />
@@ -58,6 +93,7 @@
         </EntityType>
         <EntityContainer Name="DemEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Client" EntityType="Self.Client" />
+          <EntitySet Name="RealProperties" EntityType="Self.RealProperties" />
           <EntitySet Name="Realtor" EntityType="Self.Realtor" />
         </EntityContainer>
       </Schema>
@@ -75,6 +111,24 @@
                 <ScalarProperty Name="Patronymic" ColumnName="Patronymic" />
                 <ScalarProperty Name="Phone" ColumnName="Phone" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RealProperties">
+            <EntityTypeMapping TypeName="DemModel.RealProperties">
+              <MappingFragment StoreEntitySet="RealProperties">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="NumberOfFloors" ColumnName="NumberOfFloors" />
+                <ScalarProperty Name="NumberOfRooms" ColumnName="NumberOfRooms" />
+                <ScalarProperty Name="Square" ColumnName="Square" />
+                <ScalarProperty Name="Сity" ColumnName="Сity" />
+                <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+                <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+                <ScalarProperty Name="Street" ColumnName="Street" />
+                <ScalarProperty Name="ApartmentNumber" ColumnName="ApartmentNumber" />
+                <ScalarProperty Name="HouseNumber" ColumnName="HouseNumber" />
+                <ScalarProperty Name="Floor" ColumnName="Floor" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

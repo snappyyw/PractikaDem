@@ -83,8 +83,8 @@ namespace Dem.Window
         }
         private void Update()
         {
-            var client = demEntities.Client.Where(cl => cl.Name.ToLower().Contains(textBoxSearch.Text.ToLower())).ToList();
-            dataGrid.ItemsSource = client.ToList();
+            var realtors = demEntities.Realtor.Where(cl => cl.Name.ToLower().Contains(textBoxSearch.Text.ToLower())).ToList();
+            dataGrid.ItemsSource = realtors.ToList();
         }
     }
 }

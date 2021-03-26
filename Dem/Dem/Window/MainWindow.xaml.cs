@@ -39,5 +39,12 @@ namespace Dem
             realtorWindow.Show();
             this.Close();
         }
+
+        private void button_RealProperties_Click(object sender, RoutedEventArgs e)
+        {
+            RealPropertiesWindow realPropertiesWindow = new RealPropertiesWindow();
+            realPropertiesWindow.Show();
+            this.Close();
+        }
     }
 }
