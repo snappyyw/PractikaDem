@@ -14,6 +14,12 @@ namespace Dem.Model
     
     public partial class RealProperties
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public RealProperties()
+        {
+            this.Offer = new HashSet<Offer>();
+        }
+    
         public int id { get; set; }
         public Nullable<int> NumberOfFloors { get; set; }
         public Nullable<int> NumberOfRooms { get; set; }
@@ -26,5 +32,8 @@ namespace Dem.Model
         public string HouseNumber { get; set; }
         public Nullable<int> Floor { get; set; }
         public string Type { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Offer> Offer { get; set; }
     }
 }

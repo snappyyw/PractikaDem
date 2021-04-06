@@ -46,5 +46,19 @@ namespace Dem
             realPropertiesWindow.Show();
             this.Close();
         }
+
+        private void button_Offer_Click(object sender, RoutedEventArgs e)
+        {
+            OfferWindow offerWindow = new OfferWindow();
+            offerWindow.Show();
+            this.Close();
+        }
+
+        private void button_Need_Click(object sender, RoutedEventArgs e)
+        {
+            NeedWindow need = new NeedWindow();
+            need.Show();
+            this.Close();
+        }
     }
 }

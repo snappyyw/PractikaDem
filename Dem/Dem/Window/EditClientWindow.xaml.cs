@@ -77,7 +77,7 @@ namespace Dem.Window
             StringBuilder error = new StringBuilder();
             if (textBoxEmail.Text == "" && textBoxPhone.Text == "")
             {
-                error.Append("Введите телефон или Email");
+                error.AppendLine("Введите телефон или Email");
             }
             if(error.Length > 0)
             {

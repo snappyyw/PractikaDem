@@ -1,0 +1,33 @@
+﻿<Window x:Class="Dem.Window.NeedWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dem.Window"
+        mc:Ignorable="d"
+        Title="NeedWindow" Height="350" Width="700">
+    <Grid>
+        <DataGrid x:Name="dataGrid" Margin="0,0,153,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Клиент" Binding="{Binding idClient}" Width="*"/>
+                <DataGridTextColumn Header="Риэлтор" Binding="{Binding idRealtor}" Width="*"/>
+                <DataGridTextColumn Header="Тип" Binding="{Binding Type}" Width="*"/>
+                <DataGridTextColumn Header="Адрес" Binding="{Binding Address}" Width="*"/>
+                <DataGridTextColumn Header="Мин цена" Binding="{Binding MinPrice}" Width="*"/>
+                <DataGridTextColumn Header="Макс цена" Binding="{Binding MaxPrice}" Width="*"/>
+                <DataGridTextColumn Header="Мин площадь" Binding="{Binding MinSquare}" Width="*"/>
+                <DataGridTextColumn Header="Макс площадь" Binding="{Binding MaxSquare}" Width="*"/>
+                <DataGridTextColumn Header="Мин комнат" Binding="{Binding MinNumberOfRooms}" Width="*"/>
+                <DataGridTextColumn Header="Макс комнат" Binding="{Binding MaxNumberOfRooms}" Width="*"/>
+                <DataGridTextColumn Header="Макс этажей" Binding="{Binding MaxNumberOfFloors}" Width="*"/>
+                <DataGridTextColumn Header="Мин этажей" Binding="{Binding MinNumberOfFloors}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="button" Content="Добавить" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" Width="123" Height="39" Click="button_Add_Need_Click"/>
+        <Button x:Name="button_Copy" Content="Изменить" HorizontalAlignment="Right" Margin="0,66,10,0" VerticalAlignment="Top" Width="123" Height="39" Click="button_Edit_Need_Click"/>
+        <Button x:Name="button_Copy1" Content="Удалить" HorizontalAlignment="Right" Margin="0,122,10,158" Width="123" Click="button_Delete_Need_Click"/>
+        <Button x:Name="button_Copy2" Content="Выйти" HorizontalAlignment="Right" Margin="0,0,10,10" Width="123" Click="button_Exit_Click" Height="39" VerticalAlignment="Bottom"/>
+        <Button x:Name="button_Copy3" Content="Обновить" HorizontalAlignment="Right" Margin="0,0,10,106" Width="123" Click="button_Update_Need_Click" Height="39" VerticalAlignment="Bottom"/>
+
+    </Grid>
+</Window>

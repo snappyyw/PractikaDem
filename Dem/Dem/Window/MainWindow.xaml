@@ -7,8 +7,10 @@
         mc:Ignorable="d"
         Title="Главное окно" Height="437.338" Width="462.013">
     <Grid>
-        <Button x:Name="button" Content="Клиенты" VerticalAlignment="Top" Margin="157,60,152,0" Height="47" Click="button_Client_Click"/>
-        <Button x:Name="button_Copy" Content="Риэлтор" Margin="157,157,152,202" IsDefault="True" Click="button_Realtor_Click"/>
-        <Button x:Name="button_Copy1" Content="Объекты недвижимости" Margin="157,0,152,116" IsDefault="True" Click="button_RealProperties_Click" Height="47" VerticalAlignment="Bottom"/>
+        <Button x:Name="button" Content="Клиенты" VerticalAlignment="Top" Margin="43,40,0,0" Height="47" Click="button_Client_Click" HorizontalAlignment="Left" Width="145"/>
+        <Button x:Name="button_Copy" Content="Риэлтор" Margin="43,137,0,0" IsDefault="True" Click="button_Realtor_Click" HorizontalAlignment="Left" Height="47" VerticalAlignment="Top" Width="145"/>
+        <Button x:Name="button_Copy1" Content="Объекты недвижимости" Margin="43,0,0,136" IsDefault="True" Click="button_RealProperties_Click" Height="47" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="145"/>
+        <Button x:Name="button_Copy2" Content="Предложение" VerticalAlignment="Top" Margin="0,40,63,0" Height="47" Click="button_Offer_Click" HorizontalAlignment="Right" Width="145"/>
+        <Button x:Name="button_Copy3" Content="Потребности" VerticalAlignment="Top" Margin="0,137,63,0" Height="47" Click="button_Need_Click" HorizontalAlignment="Right" Width="145"/>
     </Grid>
 </Window>

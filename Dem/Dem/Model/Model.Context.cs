@@ -26,6 +26,8 @@ namespace Dem.Model
         }
     
         public virtual DbSet<Client> Client { get; set; }
+        public virtual DbSet<Need> Need { get; set; }
+        public virtual DbSet<Offer> Offer { get; set; }
         public virtual DbSet<RealProperties> RealProperties { get; set; }
         public virtual DbSet<Realtor> Realtor { get; set; }
     }

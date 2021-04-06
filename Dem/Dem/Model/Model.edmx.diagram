@@ -4,10 +4,17 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="dfa84976ccf64dd29c2a6bf765057029" Name="Diagram1">
-        <EntityTypeShape EntityType="DemModel.Client" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DemModel.RealProperties" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DemModel.Realtor" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+      <Diagram DiagramId="f79fa36c1add40bf851d11b3e05c00f2" Name="Diagram1">
+        <EntityTypeShape EntityType="DemModel.Client" Width="1.5" PointX="0.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemModel.Need" Width="1.5" PointX="3.5" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemModel.Offer" Width="1.5" PointX="6.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemModel.RealProperties" Width="1.5" PointX="8.875" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemModel.Realtor" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="DemModel.FK_Need_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="DemModel.FK_Offer_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="DemModel.FK_Need_Realtor" ManuallyRouted="false" />
+        <AssociationConnector Association="DemModel.FK_Offer_RealProperties" ManuallyRouted="false" />
+        <AssociationConnector Association="DemModel.FK_Offer_Realtor" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
